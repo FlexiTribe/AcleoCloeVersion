@@ -163,7 +163,7 @@ summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:n
 <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:16px;color:#E8CA96">All About You.</span>
 <span style="font-size:14px;line-height:1.6">Nurse-led private nursing across Mandurah, the Peel Region &amp; Rockingham. Locally owned.</span>
 <a href="tel:1300225366" style="color:#fffdf9;font-weight:600;font-size:15px">1300 225 366</a>
-<a href="mailto:care@acleoprivatenursing.com.au" style="color:#c7d0e6;font-size:14px;overflow-wrap:anywhere">care@acleoprivatenursing.com.au</a>
+<a href="mailto:hello@acleo.com.au" style="color:#c7d0e6;font-size:14px;overflow-wrap:anywhere">hello@acleo.com.au</a>
 </div>
 <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
 <span style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#E8CA96;padding-bottom:4px">Services</span>
@@ -209,14 +209,14 @@ summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:n
 </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;phoneNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;1300 225 366&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;care@acleoprivatenursing.com.au&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#A37F45&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#A37F45&quot;,&quot;#E8CA96&quot;,&quot;#9bcbd4&quot;]}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;phoneNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;1300 225 366&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;hello@acleo.com.au&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#A37F45&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#A37F45&quot;,&quot;#E8CA96&quot;,&quot;#9bcbd4&quot;]}}">
 class Component extends DCLogic {
   renderVals() {
     const phoneNumber = this.props.phoneNumber ?? "1300 225 366";
     return {
       phoneNumber,
       phoneDigits: phoneNumber.replace(/[^0-9+]/g, ""),
-      email: this.props.email ?? "care@acleoprivatenursing.com.au",
+      email: this.props.email ?? "hello@acleo.com.au",
       accentColor: this.props.accentColor ?? "#A37F45",
       nurseLedSteps: [
         "Gain an understanding of the purpose of your appointment.",
