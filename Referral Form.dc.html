@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>doc-page:not(:defined){visibility:hidden}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="./doc-page.js"></script>
+</helmet>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" hint-size="100%,100%">
+  <section class="page" style="padding:0.6in 0.7in;font-family:'Poppins',sans-serif;color:#263a75;box-sizing:border-box">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #A37F45;padding-bottom:14px;margin-bottom:20px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="./assets/acleo-heart-icon-bg.jpg" alt="Acleo heart icon" style="height:52px;width:52px;border-radius:10px;object-fit:cover">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:#263a75">ACLEO</div>
+          <div style="font-size:10.5px;letter-spacing:2px;color:#A37F45;font-weight:600">PRIVATE NURSING</div>
+        </div>
+      </div>
+      <div style="text-align:right;font-size:10px;color:#586485;line-height:1.6">
+        <div>Phone: 1300 225 366</div>
+        <div>Email: care@acleoprivatenursing.com.au</div>
+      </div>
+    </div>
+    <h1 style="font-family:'Playfair Display',serif;font-weight:600;font-size:22px;margin:0 0 4px;color:#263a75">Client Referral Form</h1>
+    <p style="font-size:11px;color:#586485;margin:0 0 20px">Please complete and return to Acleo Private Nursing. We aim to review referrals promptly.</p>
+
+    <h3 style="font-size:12px;letter-spacing:1px;color:#A37F45;font-weight:600;margin:0 0 8px">REFERRER DETAILS</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin-bottom:18px;font-size:11.5px">
+      <div>Name: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Organisation: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Role: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Phone: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div style="grid-column:1/-1">Email: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+    </div>
+
+    <h3 style="font-size:12px;letter-spacing:1px;color:#A37F45;font-weight:600;margin:0 0 8px">CLIENT DETAILS</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin-bottom:18px;font-size:11.5px">
+      <div>Full Name: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Date of Birth: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Address: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Phone: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Funding Type (Private / NDIS / DVA / Support at Home): <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+      <div>Urgency (Routine / Urgent): <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:100%;background:transparent;outline:none;padding:2px 0"></div>
+    </div>
+
+    <h3 style="font-size:12px;letter-spacing:1px;color:#A37F45;font-weight:600;margin:0 0 8px">REASON FOR REFERRAL &amp; RELEVANT CLINICAL BACKGROUND</h3>
+    <textarea style="width:100%;box-sizing:border-box;border:1px solid #d8d2c0;border-radius:6px;height:1.3in;margin-bottom:18px;font-family:inherit;font-size:11px;color:#263a75;padding:8px;resize:none;outline:none"></textarea>
+
+    <h3 style="font-size:12px;letter-spacing:1px;color:#A37F45;font-weight:600;margin:0 0 8px">NURSING SERVICE REQUIRED</h3>
+    <p style="font-size:11px;color:#3c4a63;margin:0 0 18px">Wound Care &nbsp;<input type="checkbox" style="margin:0 4px;vertical-align:middle;width:13px;height:13px">&nbsp;&nbsp; Medication Support &nbsp;<input type="checkbox" style="margin:0 4px;vertical-align:middle;width:13px;height:13px">&nbsp;&nbsp; Continence/Catheter Care &nbsp;<input type="checkbox" style="margin:0 4px;vertical-align:middle;width:13px;height:13px">&nbsp;&nbsp; Diabetes Management &nbsp;<input type="checkbox" style="margin:0 4px;vertical-align:middle;width:13px;height:13px">&nbsp;&nbsp; Mental Health Nursing &nbsp;<input type="checkbox" style="margin:0 4px;vertical-align:middle;width:13px;height:13px">&nbsp;&nbsp; Other: <input type="text" style="border:none;border-bottom:1px solid #263a75;font-size:11.5px;font-family:inherit;color:#263a75;width:1.6in;background:transparent;outline:none;padding:2px 0"></p>
+
+    <div style="background:#f4efe4;border-radius:8px;padding:14px 18px;font-size:10.5px;color:#586485;line-height:1.6">Please attach any relevant reports, care plans or medical history. Our clinical team will confirm the referral and be in touch to arrange care.</div>
+  </section>
+</x-import>
+</x-dc>
+</body>
+</html>
