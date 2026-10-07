@@ -1,0 +1,7 @@
+.git
+.thumbnail
+.wrangler
+node_modules
+wrangler.jsonc
+README.md
+screenshots
